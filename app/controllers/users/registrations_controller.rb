@@ -60,7 +60,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
     #super(resource)
     flash[:notice] = "Welcome! You have signed up successfully."
     #user_path(current_user.id)
-    book_path
+    user_path(current_user.id)
   end
 
 end
